@@ -40,7 +40,6 @@ export const ResponseSchemaPopular = z.object({
 
 export const CreateMovieSchema = z.object({
   title: z.string(),
-  image: z.string(),
   fileId: z.string(),
 });
 
