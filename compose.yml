@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    image: liteflix-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=
+      - MOVIEDB_KEY=
+      - DB_TOKEN=
+      - DB_URL=
