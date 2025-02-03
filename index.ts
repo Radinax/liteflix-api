@@ -7,7 +7,6 @@ import { CreateMovieSchema, HeaderSchema } from "./schema";
 import { applyMigrations, db } from "./db";
 import { $files, $movies } from "./db/schema";
 import { eq } from "drizzle-orm";
-import { handle } from "@hono/node-server/vercel";
 
 try {
   applyMigrations();
@@ -16,8 +15,6 @@ try {
 }
 
 const app = new Hono();
-
-export const runtime = "nodejs";
 
 app.use(logger());
 app.use(
@@ -96,9 +93,6 @@ app.get("/files/:id", async (c) => {
   // Return the file as binary data
   return c.body(file.content, 200, { "Content-Type": file.type });
 });
-
-export const GET = handle(app);
-export const POST = handle(app);
 
 export default {
   port: 3000,

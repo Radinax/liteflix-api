@@ -13,7 +13,6 @@
     "dev": "bun --watch index.ts"
   },
   "dependencies": {
-    "@hono/node-server": "^1.13.8",
     "@hono/zod-validator": "^0.4.2",
     "@libsql/client": "^0.14.0",
     "drizzle-orm": "^0.39.1",
