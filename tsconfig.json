@@ -22,9 +22,6 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false,
-
-    "outDir": "./dist", // Output directory for compiled JavaScript
-    "rootDir": "./" // Root directory for TypeScript files
+    "noPropertyAccessFromIndexSignature": false
   }
 }
