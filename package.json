@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "bun --watch index.ts",
-    "build": "bun build ./index.tsx"
+    "build": "bun build ./index.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.2",
