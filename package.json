@@ -10,7 +10,8 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "dev": "bun --watch index.ts"
+    "dev": "bun --watch index.ts",
+    "build": "bun build ./index.tsx"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.2",
